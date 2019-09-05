@@ -1,6 +1,6 @@
 # osu-templates
 
-Templates for use when creating osu! dependent projects.
+Templates for use when creating osu! dependent projects. Create a fully-testable (and ready for git) custom ruleset in just two lines.
 
 ## Usage
 
