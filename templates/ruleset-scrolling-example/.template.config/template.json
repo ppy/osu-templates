@@ -4,9 +4,9 @@
     "classifications": [
         "Console"
     ],
-    "name": "osu! ruleset (Pippidon sample)",
-    "identity": "ppy.osu.Game.Templates.Ruleset.Pippidon",
-    "shortName": "ruleset",
+    "name": "osu! ruleset (scrolling pippidon example)",
+    "identity": "ppy.osu.Game.Templates.Rulesets.Pippidon",
+    "shortName": "ruleset-scrolling-example",
     "tags": {
         "language": "C#",
         "type": "project"
