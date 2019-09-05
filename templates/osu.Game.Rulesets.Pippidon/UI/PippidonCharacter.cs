@@ -35,7 +35,7 @@ namespace osu.Game.Rulesets.Pippidon.UI
                 Origin = Anchor.Centre,
                 Scale = new Vector2(1.2f),
                 RelativeSizeAxes = Axes.Both,
-                Texture = textures.Get("pippidon")
+                Texture = textures.Get("character")
             };
 
             LanePosition.BindValueChanged(e => { this.MoveToY(e.NewValue * PippidonPlayfield.LANE_HEIGHT); });
