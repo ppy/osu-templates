@@ -35,7 +35,7 @@ namespace osu.Game.Rulesets.Pippidon.UI
 
         protected override ReplayInputHandler CreateReplayInputHandler(Replay replay) => new PippidonFramedReplayInputHandler(replay);
 
-        public override DrawableHitObject<PippidonHitObject> CreateDrawableRepresentation(PippidonHitObject h) => new DrawableCoin(h);
+        public override DrawableHitObject<PippidonHitObject> CreateDrawableRepresentation(PippidonHitObject h) => new DrawablePippidonHitObject(h);
 
         protected override PassThroughInputManager CreateInputManager() => new PippidonInputManager(Ruleset?.RulesetInfo);
     }

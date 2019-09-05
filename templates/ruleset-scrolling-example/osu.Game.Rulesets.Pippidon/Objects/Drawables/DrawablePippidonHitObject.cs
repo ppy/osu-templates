@@ -17,11 +17,11 @@ using osuTK.Graphics;
 
 namespace osu.Game.Rulesets.Pippidon.Objects.Drawables
 {
-    public class DrawableCoin : DrawableHitObject<PippidonHitObject>
+    public class DrawablePippidonHitObject : DrawableHitObject<PippidonHitObject>
     {
         private BindableNumber<int> currentLane;
 
-        public DrawableCoin(PippidonHitObject hitObject)
+        public DrawablePippidonHitObject(PippidonHitObject hitObject)
             : base(hitObject)
         {
             Size = new Vector2(40);
