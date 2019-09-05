@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "ppy Pty Ltd",
+    "classifications": [
+        "Console"
+    ],
+    "name": "osu! ruleset (Pippidon sample)",
+    "identity": "ppy.osu.Game.Templates.Ruleset.Pippidon",
+    "shortName": "ruleset",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "Pippidon",
+    "preferNameDirectory": true
+}

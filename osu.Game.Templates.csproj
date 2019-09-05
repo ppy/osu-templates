@@ -2,10 +2,10 @@
   <PropertyGroup>
     <PackageType>Template</PackageType>
     <PackageVersion>1.0</PackageVersion>
-    <PackageId>ppy.Osu.Game.Templates</PackageId>
+    <PackageId>ppy.osu.Game.Templates</PackageId>
     <Title>osu! templates</Title>
     <Authors>ppy Pty Ltd</Authors>
-    <PackageLicenseUrl>https://github.com/ppy/osu-templates/blob/master/LICENCE.md</PackageLicenseUrl>
+    <PackageLicense>https://github.com/ppy/osu-templates/blob/master/LICENCE.md</PackageLicense>
     <PackageProjectUrl>https://github.com/ppy/osu-templates</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ppy/osu-templates</RepositoryUrl>
     <PackageReleaseNotes>Automated release.</PackageReleaseNotes>
