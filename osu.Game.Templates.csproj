@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0</PackageVersion>
     <PackageId>ppy.osu.Game.Templates</PackageId>
     <Title>osu! templates</Title>
     <Authors>ppy Pty Ltd</Authors>
