@@ -1,2 +1,3 @@
-# osu-ruleset-sample
-a wip template project
+# osu-templates
+
+Templates for use when creating osu! dependent projects.

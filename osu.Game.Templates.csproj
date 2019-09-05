@@ -3,8 +3,13 @@
     <PackageType>Template</PackageType>
     <PackageVersion>1.0</PackageVersion>
     <PackageId>ppy.Osu.Game.Templates</PackageId>
-    <Title>osu! ruleset templates</Title>
+    <Title>osu! templates</Title>
     <Authors>ppy Pty Ltd</Authors>
+    <PackageLicenseUrl>https://github.com/ppy/osu/blob/master/LICENCE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ppy/osu</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ppy/osu</RepositoryUrl>
+    <PackageReleaseNotes>Automated release.</PackageReleaseNotes>
+    <copyright>Copyright (c) 2019 ppy Pty Ltd</copyright>
     <Description>Templates to use when creating a ruleset for consumption in osu!.</Description>
     <PackageTags>dotnet-new;templates;osu</PackageTags>
     <TargetFramework>netstandard2.0</TargetFramework>
