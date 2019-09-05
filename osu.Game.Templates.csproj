@@ -5,9 +5,9 @@
     <PackageId>ppy.Osu.Game.Templates</PackageId>
     <Title>osu! templates</Title>
     <Authors>ppy Pty Ltd</Authors>
-    <PackageLicenseUrl>https://github.com/ppy/osu/blob/master/LICENCE.md</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/ppy/osu</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/ppy/osu</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/ppy/osu-templates/blob/master/LICENCE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ppy/osu-templates</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ppy/osu-templates</RepositoryUrl>
     <PackageReleaseNotes>Automated release.</PackageReleaseNotes>
     <copyright>Copyright (c) 2019 ppy Pty Ltd</copyright>
     <Description>Templates to use when creating a ruleset for consumption in osu!.</Description>
