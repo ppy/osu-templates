@@ -54,28 +54,12 @@ namespace osu.Game.Rulesets.EmptyScrolling
             new KeyBinding(InputKey.X, EmptyScrollingAction.Button2),
         };
 
-        public override Drawable CreateIcon() => new Icon(ShortName[0]);
-
-        public class Icon : CompositeDrawable
+        public override Drawable CreateIcon() => new SpriteText
         {
-            public Icon(char c)
-            {
-                InternalChildren = new Drawable[]
-                {
-                    new Circle
-                    {
-                        RelativeSizeAxes = Axes.Both,
-                        Colour = Color4.White,
-                    },
-                    new SpriteText
-                    {
-                        Anchor = Anchor.Centre,
-                        Origin = Anchor.Centre,
-                        Text = c.ToString(),
-                        Font = OsuFont.Default.With(size: 18)
-                    }
-                };
-            }
-        }
+            Anchor = Anchor.Centre,
+            Origin = Anchor.Centre,
+            Text = ShortName[0].ToString(),
+            Font = OsuFont.Default.With(size: 18),
+        };
     }
 }
