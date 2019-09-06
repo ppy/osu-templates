@@ -3,8 +3,6 @@
 
 using System.Collections.Generic;
 using osu.Framework.Graphics;
-using osu.Framework.Graphics.Containers;
-using osu.Framework.Graphics.Shapes;
 using osu.Framework.Graphics.Sprites;
 using osu.Framework.Input.Bindings;
 using osu.Game.Beatmaps;
@@ -15,7 +13,6 @@ using osu.Game.Rulesets.EmptyScrolling.Beatmaps;
 using osu.Game.Rulesets.EmptyScrolling.Mods;
 using osu.Game.Rulesets.EmptyScrolling.UI;
 using osu.Game.Rulesets.UI;
-using osuTK.Graphics;
 
 namespace osu.Game.Rulesets.EmptyScrolling
 {
