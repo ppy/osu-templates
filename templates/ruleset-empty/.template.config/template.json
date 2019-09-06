@@ -6,7 +6,7 @@
     ],
     "name": "osu! ruleset",
     "identity": "ppy.osu.Game.Templates.Rulesets.Empty",
-    "shortName": "ruleset-empty",
+    "shortName": "ruleset",
     "tags": {
         "language": "C#",
         "type": "project"
