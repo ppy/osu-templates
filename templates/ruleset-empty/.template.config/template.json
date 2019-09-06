@@ -5,7 +5,7 @@
         "Console"
     ],
     "name": "osu! ruleset",
-    "identity": "ppy.osu.Game.Templates.Rulesets.Empty",
+    "identity": "ppy.osu.Game.Templates.Rulesets",
     "shortName": "ruleset",
     "tags": {
         "language": "C#",
