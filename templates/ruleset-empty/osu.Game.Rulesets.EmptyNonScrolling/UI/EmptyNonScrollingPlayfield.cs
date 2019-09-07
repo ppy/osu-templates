@@ -10,6 +10,8 @@ namespace osu.Game.Rulesets.EmptyNonScrolling.UI
     [Cached]
     public class EmptyNonScrollingPlayfield : Playfield
     {
+        protected override GameplayCursorContainer CreateCursor() => new EmptyNonScrollingCursorContainer();
+
         [BackgroundDependencyLoader]
         private void load()
         {
