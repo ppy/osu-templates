@@ -3,8 +3,6 @@
 
 using System.Collections.Generic;
 using osu.Framework.Graphics;
-using osu.Framework.Graphics.Containers;
-using osu.Framework.Graphics.Shapes;
 using osu.Framework.Graphics.Sprites;
 using osu.Framework.Input.Bindings;
 using osu.Game.Beatmaps;
@@ -15,7 +13,6 @@ using osu.Game.Rulesets.EmptyScrolling.Beatmaps;
 using osu.Game.Rulesets.EmptyScrolling.Mods;
 using osu.Game.Rulesets.EmptyScrolling.UI;
 using osu.Game.Rulesets.UI;
-using osuTK.Graphics;
 
 namespace osu.Game.Rulesets.EmptyScrolling
 {
@@ -54,28 +51,12 @@ namespace osu.Game.Rulesets.EmptyScrolling
             new KeyBinding(InputKey.X, EmptyScrollingAction.Button2),
         };
 
-        public override Drawable CreateIcon() => new Icon(ShortName[0]);
-
-        public class Icon : CompositeDrawable
+        public override Drawable CreateIcon() => new SpriteText
         {
-            public Icon(char c)
-            {
-                InternalChildren = new Drawable[]
-                {
-                    new Circle
-                    {
-                        RelativeSizeAxes = Axes.Both,
-                        Colour = Color4.White,
-                    },
-                    new SpriteText
-                    {
-                        Anchor = Anchor.Centre,
-                        Origin = Anchor.Centre,
-                        Text = c.ToString(),
-                        Font = OsuFont.Default.With(size: 18)
-                    }
-                };
-            }
-        }
+            Anchor = Anchor.Centre,
+            Origin = Anchor.Centre,
+            Text = ShortName[0].ToString(),
+            Font = OsuFont.Default.With(size: 18),
+        };
     }
 }
