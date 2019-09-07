@@ -3,12 +3,14 @@
 
 using System.Collections.Generic;
 using osu.Game.Rulesets.Replays;
+using osuTK;
 
 namespace osu.Game.Rulesets.EmptyNonScrolling.Replays
 {
     public class EmptyNonScrollingReplayFrame : ReplayFrame
     {
         public List<EmptyNonScrollingAction> Actions = new List<EmptyNonScrollingAction>();
+        public Vector2 Position;
 
         public EmptyNonScrollingReplayFrame(EmptyNonScrollingAction? button = null)
         {
