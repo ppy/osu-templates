@@ -11,6 +11,6 @@
         "language": "C#",
         "type": "project"
     },
-    "sourceName": "Empty",
+    "sourceName": "EmptyNonScrolling",
     "preferNameDirectory": true
 }
