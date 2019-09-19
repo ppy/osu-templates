@@ -13,12 +13,7 @@ namespace osu.Game.Rulesets.Pippidon.Beatmaps
 {
     public class PippidonBeatmapConverter : BeatmapConverter<PippidonHitObject>
     {
-        protected override IEnumerable<Type> ValidConversionTypes { get; } = new[]
-        {
-            // todo: Populate with conversion types that should be supported other than position (ie. typeof(IHasCurve))
-            // https://github.com/ppy/osu/tree/master/osu.Game/Rulesets/Objects/Types
-            typeof(IHasPosition)
-        };
+        protected override IEnumerable<Type> ValidConversionTypes { get; } = new[] { typeof(IHasPosition) };
 
         public PippidonBeatmapConverter(IBeatmap beatmap)
             : base(beatmap)
