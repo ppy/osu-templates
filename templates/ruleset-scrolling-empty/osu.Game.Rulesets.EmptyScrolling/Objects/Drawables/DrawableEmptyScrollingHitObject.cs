@@ -9,9 +9,9 @@ using osuTK.Graphics;
 
 namespace osu.Game.Rulesets.EmptyScrolling.Objects.Drawables
 {
-    public class DrawableEmptyScrollingObject : DrawableHitObject<EmptyScrollingHitObject>
+    public class DrawableEmptyScrollingHitObject : DrawableHitObject<EmptyScrollingHitObject>
     {
-        public DrawableEmptyScrollingObject(EmptyScrollingHitObject hitObject)
+        public DrawableEmptyScrollingHitObject(EmptyScrollingHitObject hitObject)
             : base(hitObject)
         {
             Size = new Vector2(40);
