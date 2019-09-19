@@ -10,8 +10,6 @@ namespace osu.Game.Rulesets.EmptyFreeformRuleset.UI
     [Cached]
     public class EmptyFreeformRulesetPlayfield : Playfield
     {
-        protected override GameplayCursorContainer CreateCursor() => new EmptyFreeformRulesetCursorContainer();
-
         [BackgroundDependencyLoader]
         private void load()
         {
