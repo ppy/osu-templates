@@ -35,7 +35,7 @@ namespace osu.Game.Rulesets.EmptyScrolling.UI
 
         protected override ReplayInputHandler CreateReplayInputHandler(Replay replay) => new EmptyScrollingFramedReplayInputHandler(replay);
 
-        public override DrawableHitObject<EmptyScrollingHitObject> CreateDrawableRepresentation(EmptyScrollingHitObject h) => new DrawableEmptyScrollingObject(h);
+        public override DrawableHitObject<EmptyScrollingHitObject> CreateDrawableRepresentation(EmptyScrollingHitObject h) => new DrawableEmptyScrollingHitObject(h);
 
         protected override PassThroughInputManager CreateInputManager() => new EmptyScrollingInputManager(Ruleset?.RulesetInfo);
     }
