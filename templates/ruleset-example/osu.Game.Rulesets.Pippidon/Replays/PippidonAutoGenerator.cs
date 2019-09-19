@@ -14,7 +14,7 @@ namespace osu.Game.Rulesets.Pippidon.Replays
         protected Replay Replay;
         protected List<ReplayFrame> Frames => Replay.Frames;
 
-        public new Beatmap<PippidonHitObject> Beatmap => (Beatmap<PippidonHitObject>) base.Beatmap;
+        public new Beatmap<PippidonHitObject> Beatmap => (Beatmap<PippidonHitObject>)base.Beatmap;
 
         public PippidonAutoGenerator(IBeatmap beatmap)
             : base(beatmap)

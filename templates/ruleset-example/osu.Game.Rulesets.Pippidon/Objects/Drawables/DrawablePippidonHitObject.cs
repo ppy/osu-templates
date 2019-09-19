@@ -70,7 +70,6 @@ namespace osu.Game.Rulesets.Pippidon.Objects.Drawables
                     break;
 
                 case ArmedState.Miss:
-
                     const double duration = 1000;
 
                     this.ScaleTo(0.8f, duration, Easing.OutQuint);
