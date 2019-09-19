@@ -9,9 +9,13 @@ Templates for use when creating osu! dependent projects. Create a fully-testable
 # this only needs to be done once
 dotnet new -i ppy.osu.Game.Templates
 
-# start a new empty ruleset...
+# create an empty freeform ruleset
+dotnet new ruleset -n MyCoolRuleset
+# create an empty scrolling ruleset (which provides the basics for a scrolling ←↑→↓ ruleset)
 dotnet new ruleset-scrolling -n MyCoolRuleset
 
-# ..or start with a working sample game
+# ..or start with a working sample freeform game
+dotnet new ruleset-example -n MyCoolWorkingRuleset
+# ..or a working sample scrolling game
 dotnet new ruleset-scrolling-example -n MyCoolWorkingRuleset
 ```
