@@ -13,13 +13,5 @@ namespace osu.Game.Rulesets.Pippidon.Scoring
             : base(ruleset)
         {
         }
-
-        protected override void Reset(bool storeResults)
-        {
-            base.Reset(storeResults);
-
-            Health.Value = 1;
-            Accuracy.Value = 1;
-        }
     }
 }
