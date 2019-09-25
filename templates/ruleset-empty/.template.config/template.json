@@ -11,6 +11,6 @@
         "language": "C#",
         "type": "project"
     },
-    "sourceName": "EmptyFreeform",
+    "sourceName": "EmptyFreeformRuleset",
     "preferNameDirectory": true
 }
