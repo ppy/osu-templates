@@ -54,7 +54,7 @@ namespace osu.Game.Rulesets.Pippidon
         public override Drawable CreateIcon() => new Sprite
         {
             Margin = new MarginPadding { Top = 3 },
-            Texture = new TextureStore(new TextureLoaderStore(CreateReourceStore()), false).Get("Textures/coin"),
+            Texture = new TextureStore(new TextureLoaderStore(CreateResourceStore()), false).Get("Textures/coin"),
         };
     }
 }
