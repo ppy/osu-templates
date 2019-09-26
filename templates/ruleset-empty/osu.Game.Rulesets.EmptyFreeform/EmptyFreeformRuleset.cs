@@ -54,8 +54,8 @@ namespace osu.Game.Rulesets.EmptyFreeform
 
         public override IEnumerable<KeyBinding> GetDefaultKeyBindings(int variant = 0) => new[]
         {
-            new KeyBinding(InputKey.Z, EmptyFreeformRulesetAction.Button1),
-            new KeyBinding(InputKey.X, EmptyFreeformRulesetAction.Button2),
+            new KeyBinding(InputKey.Z, EmptyFreeformAction.Button1),
+            new KeyBinding(InputKey.X, EmptyFreeformAction.Button2),
         };
 
         public override Drawable CreateIcon() => new Icon(ShortName[0]);

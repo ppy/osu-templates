@@ -6,7 +6,7 @@ using osu.Framework;
 using osu.Framework.Platform;
 using osu.Game.Tests;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.Tests
+namespace osu.Game.Rulesets.EmptyFreeform.Tests
 {
     public static class VisualTestRunner
     {

@@ -44,9 +44,9 @@ namespace osu.Game.Rulesets.EmptyFreeform.Replays
                 {
                     Position = GamefieldToScreenSpace(Position),
                 },
-                new ReplayState<EmptyFreeformRulesetAction>
+                new ReplayState<EmptyFreeformAction>
                 {
-                    PressedActions = CurrentFrame?.Actions ?? new List<EmptyFreeformRulesetAction>(),
+                    PressedActions = CurrentFrame?.Actions ?? new List<EmptyFreeformAction>(),
                 }
             };
         }
