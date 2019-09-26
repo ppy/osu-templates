@@ -4,10 +4,10 @@
 using System.Collections.Generic;
 using osu.Game.Beatmaps;
 using osu.Game.Replays;
-using osu.Game.Rulesets.EmptyFreeformRuleset.Objects;
+using osu.Game.Rulesets.EmptyFreeform.Objects;
 using osu.Game.Rulesets.Replays;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.Replays
+namespace osu.Game.Rulesets.EmptyFreeform.Replays
 {
     public class EmptyFreeformAutoGenerator : AutoGenerator
     {

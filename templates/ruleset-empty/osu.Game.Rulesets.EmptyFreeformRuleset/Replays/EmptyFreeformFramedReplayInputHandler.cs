@@ -10,7 +10,7 @@ using osu.Game.Replays;
 using osu.Game.Rulesets.Replays;
 using osuTK;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.Replays
+namespace osu.Game.Rulesets.EmptyFreeform.Replays
 {
     public class EmptyFreeformFramedReplayInputHandler : FramedReplayInputHandler<EmptyFreeformReplayFrame>
     {

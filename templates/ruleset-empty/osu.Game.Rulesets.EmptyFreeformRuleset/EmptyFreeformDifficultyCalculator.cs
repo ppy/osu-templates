@@ -9,7 +9,7 @@ using osu.Game.Rulesets.Difficulty.Preprocessing;
 using osu.Game.Rulesets.Difficulty.Skills;
 using osu.Game.Rulesets.Mods;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset
+namespace osu.Game.Rulesets.EmptyFreeform
 {
     public class EmptyFreeformDifficultyCalculator : DifficultyCalculator
     {

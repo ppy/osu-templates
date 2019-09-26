@@ -7,7 +7,7 @@ using osu.Game.Rulesets.Scoring;
 using osuTK;
 using osuTK.Graphics;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.Objects.Drawables
+namespace osu.Game.Rulesets.EmptyFreeform.Objects.Drawables
 {
     public class DrawableEmptyFreeformHitObject : DrawableHitObject<EmptyFreeformHitObject>
     {

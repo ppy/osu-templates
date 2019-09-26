@@ -4,12 +4,12 @@
 using System;
 using System.Collections.Generic;
 using osu.Game.Beatmaps;
+using osu.Game.Rulesets.EmptyFreeform.Objects;
 using osu.Game.Rulesets.Objects;
-using osu.Game.Rulesets.EmptyFreeformRuleset.Objects;
 using osu.Game.Rulesets.Objects.Types;
 using osuTK;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.Beatmaps
+namespace osu.Game.Rulesets.EmptyFreeform.Beatmaps
 {
     public class EmptyFreeformBeatmapConverter : BeatmapConverter<EmptyFreeformHitObject>
     {

@@ -21,6 +21,6 @@
   <PropertyGroup Label="Project">
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <RootNamespace>osu.Game.Rulesets.EmptyFreeformRuleset.Tests</RootNamespace>
+    <RootNamespace>osu.Game.Rulesets.EmptyFreeform.Tests</RootNamespace>
   </PropertyGroup>
 </Project>

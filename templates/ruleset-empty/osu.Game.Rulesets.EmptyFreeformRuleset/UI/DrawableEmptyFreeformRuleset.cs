@@ -7,16 +7,16 @@ using osu.Framework.Input;
 using osu.Game.Beatmaps;
 using osu.Game.Input.Handlers;
 using osu.Game.Replays;
+using osu.Game.Rulesets.EmptyFreeform.Objects;
+using osu.Game.Rulesets.EmptyFreeform.Objects.Drawables;
+using osu.Game.Rulesets.EmptyFreeform.Replays;
+using osu.Game.Rulesets.EmptyFreeform.Scoring;
 using osu.Game.Rulesets.Mods;
 using osu.Game.Rulesets.Objects.Drawables;
-using osu.Game.Rulesets.EmptyFreeformRuleset.Objects;
-using osu.Game.Rulesets.EmptyFreeformRuleset.Objects.Drawables;
-using osu.Game.Rulesets.EmptyFreeformRuleset.Replays;
-using osu.Game.Rulesets.EmptyFreeformRuleset.Scoring;
 using osu.Game.Rulesets.Scoring;
 using osu.Game.Rulesets.UI;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.UI
+namespace osu.Game.Rulesets.EmptyFreeform.UI
 {
     [Cached]
     public class DrawableEmptyFreeformRuleset : DrawableRuleset<EmptyFreeformHitObject>

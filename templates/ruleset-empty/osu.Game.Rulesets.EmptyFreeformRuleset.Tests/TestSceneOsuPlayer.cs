@@ -4,7 +4,7 @@
 using NUnit.Framework;
 using osu.Game.Tests.Visual;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.Tests
+namespace osu.Game.Rulesets.EmptyFreeform.Tests
 {
     [TestFixture]
     public class TestSceneOsuPlayer : PlayerTestScene

@@ -10,15 +10,15 @@ using osu.Framework.Input.Bindings;
 using osu.Game.Beatmaps;
 using osu.Game.Graphics;
 using osu.Game.Rulesets.Difficulty;
+using osu.Game.Rulesets.EmptyFreeform.Beatmaps;
+using osu.Game.Rulesets.EmptyFreeform.Mods;
+using osu.Game.Rulesets.EmptyFreeform.UI;
 using osu.Game.Rulesets.Mods;
-using osu.Game.Rulesets.EmptyFreeformRuleset.Beatmaps;
-using osu.Game.Rulesets.EmptyFreeformRuleset.Mods;
-using osu.Game.Rulesets.EmptyFreeformRuleset.UI;
 using osu.Game.Rulesets.UI;
 using osuTK;
 using osuTK.Graphics;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset
+namespace osu.Game.Rulesets.EmptyFreeform
 {
     public class EmptyFreeformRuleset : Ruleset
     {

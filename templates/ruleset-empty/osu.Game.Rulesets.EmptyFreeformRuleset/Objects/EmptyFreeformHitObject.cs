@@ -6,7 +6,7 @@ using osu.Game.Rulesets.Objects;
 using osu.Game.Rulesets.Objects.Types;
 using osuTK;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.Objects
+namespace osu.Game.Rulesets.EmptyFreeform.Objects
 {
     public class EmptyFreeformHitObject : HitObject, IHasPosition
     {

@@ -5,7 +5,7 @@ using System.ComponentModel;
 using osu.Framework.Input.Bindings;
 using osu.Game.Rulesets.UI;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset
+namespace osu.Game.Rulesets.EmptyFreeform
 {
     public class EmptyFreeformInputManager : RulesetInputManager<EmptyFreeformRulesetAction>
     {
