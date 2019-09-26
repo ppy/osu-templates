@@ -20,9 +20,9 @@ using osuTK.Graphics;
 
 namespace osu.Game.Rulesets.EmptyFreeformRuleset
 {
-    public class EmptyFreeformRulesetRuleset : Ruleset
+    public class EmptyFreeformRuleset : Ruleset
     {
-        public EmptyFreeformRulesetRuleset(RulesetInfo rulesetInfo = null)
+        public EmptyFreeformRuleset(RulesetInfo rulesetInfo = null)
             : base(rulesetInfo)
         {
         }
@@ -30,20 +30,20 @@ namespace osu.Game.Rulesets.EmptyFreeformRuleset
         public override string Description => "a very emptyfreeformruleset ruleset";
 
         public override DrawableRuleset CreateDrawableRulesetWith(IWorkingBeatmap beatmap, IReadOnlyList<Mod> mods) =>
-            new DrawableEmptyFreeformRulesetRuleset(this, beatmap, mods);
+            new DrawableEmptyFreeformRuleset(this, beatmap, mods);
 
         public override IBeatmapConverter CreateBeatmapConverter(IBeatmap beatmap) =>
-            new EmptyFreeformRulesetBeatmapConverter(beatmap);
+            new EmptyFreeformBeatmapConverter(beatmap);
 
         public override DifficultyCalculator CreateDifficultyCalculator(WorkingBeatmap beatmap) =>
-            new EmptyFreeformRulesetDifficultyCalculator(this, beatmap);
+            new EmptyFreeformDifficultyCalculator(this, beatmap);
 
         public override IEnumerable<Mod> GetModsFor(ModType type)
         {
             switch (type)
             {
                 case ModType.Automation:
-                    return new[] { new EmptyFreeformRulesetModAutoplay() };
+                    return new[] { new EmptyFreeformModAutoplay() };
 
                 default:
                     return new Mod[] { null };

@@ -7,12 +7,12 @@ using osuTK;
 
 namespace osu.Game.Rulesets.EmptyFreeformRuleset.Replays
 {
-    public class EmptyFreeformRulesetReplayFrame : ReplayFrame
+    public class EmptyFreeformReplayFrame : ReplayFrame
     {
         public List<EmptyFreeformRulesetAction> Actions = new List<EmptyFreeformRulesetAction>();
         public Vector2 Position;
 
-        public EmptyFreeformRulesetReplayFrame(EmptyFreeformRulesetAction? button = null)
+        public EmptyFreeformReplayFrame(EmptyFreeformRulesetAction? button = null)
         {
             if (button.HasValue)
                 Actions.Add(button.Value);

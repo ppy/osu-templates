@@ -12,14 +12,14 @@ using osuTK;
 
 namespace osu.Game.Rulesets.EmptyFreeformRuleset.Replays
 {
-    public class EmptyFreeformRulesetFramedReplayInputHandler : FramedReplayInputHandler<EmptyFreeformRulesetReplayFrame>
+    public class EmptyFreeformFramedReplayInputHandler : FramedReplayInputHandler<EmptyFreeformReplayFrame>
     {
-        public EmptyFreeformRulesetFramedReplayInputHandler(Replay replay)
+        public EmptyFreeformFramedReplayInputHandler(Replay replay)
             : base(replay)
         {
         }
 
-        protected override bool IsImportant(EmptyFreeformRulesetReplayFrame frame) => frame.Actions.Any();
+        protected override bool IsImportant(EmptyFreeformReplayFrame frame) => frame.Actions.Any();
 
         protected Vector2 Position
         {

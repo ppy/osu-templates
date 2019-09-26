@@ -10,7 +10,7 @@ using osu.Game.Users;
 
 namespace osu.Game.Rulesets.EmptyFreeformRuleset.Mods
 {
-    public class EmptyFreeformRulesetModAutoplay : ModAutoplay<EmptyFreeformRulesetHitObject>
+    public class EmptyFreeformModAutoplay : ModAutoplay<EmptyFreeformHitObject>
     {
         public override Score CreateReplayScore(IBeatmap beatmap) => new Score
         {
@@ -18,7 +18,7 @@ namespace osu.Game.Rulesets.EmptyFreeformRuleset.Mods
             {
                 User = new User { Username = "sample" },
             },
-            Replay = new EmptyFreeformRulesetAutoGenerator(beatmap).Generate(),
+            Replay = new EmptyFreeformAutoGenerator(beatmap).Generate(),
         };
     }
 }

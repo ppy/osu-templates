@@ -9,9 +9,9 @@ using osuTK.Graphics;
 
 namespace osu.Game.Rulesets.EmptyFreeformRuleset.Objects.Drawables
 {
-    public class DrawableEmptyFreeformRulesetHitObject : DrawableHitObject<EmptyFreeformRulesetHitObject>
+    public class DrawableEmptyFreeformHitObject : DrawableHitObject<EmptyFreeformHitObject>
     {
-        public DrawableEmptyFreeformRulesetHitObject(EmptyFreeformRulesetHitObject hitObject)
+        public DrawableEmptyFreeformHitObject(EmptyFreeformHitObject hitObject)
             : base(hitObject)
         {
             Size = new Vector2(40);

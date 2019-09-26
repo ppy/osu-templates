@@ -11,9 +11,9 @@ using osu.Game.Rulesets.Mods;
 
 namespace osu.Game.Rulesets.EmptyFreeformRuleset
 {
-    public class EmptyFreeformRulesetDifficultyCalculator : DifficultyCalculator
+    public class EmptyFreeformDifficultyCalculator : DifficultyCalculator
     {
-        public EmptyFreeformRulesetDifficultyCalculator(Ruleset ruleset, WorkingBeatmap beatmap)
+        public EmptyFreeformDifficultyCalculator(Ruleset ruleset, WorkingBeatmap beatmap)
             : base(ruleset, beatmap)
         {
         }

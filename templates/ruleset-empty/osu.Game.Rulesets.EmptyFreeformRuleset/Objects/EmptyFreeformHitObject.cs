@@ -8,7 +8,7 @@ using osuTK;
 
 namespace osu.Game.Rulesets.EmptyFreeformRuleset.Objects
 {
-    public class EmptyFreeformRulesetHitObject : HitObject, IHasPosition
+    public class EmptyFreeformHitObject : HitObject, IHasPosition
     {
         public override Judgement CreateJudgement() => new Judgement();
 

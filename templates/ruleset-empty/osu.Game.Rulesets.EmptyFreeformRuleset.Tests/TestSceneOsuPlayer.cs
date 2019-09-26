@@ -10,7 +10,7 @@ namespace osu.Game.Rulesets.EmptyFreeformRuleset.Tests
     public class TestSceneOsuPlayer : PlayerTestScene
     {
         public TestSceneOsuPlayer()
-            : base(new EmptyFreeformRulesetRuleset())
+            : base(new EmptyFreeformRuleset())
         {
         }
     }

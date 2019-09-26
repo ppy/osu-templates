@@ -7,9 +7,9 @@ using osu.Game.Rulesets.UI;
 
 namespace osu.Game.Rulesets.EmptyFreeformRuleset.Scoring
 {
-    public class EmptyFreeformRulesetScoreProcessor : ScoreProcessor<EmptyFreeformRulesetHitObject>
+    public class EmptyFreeformScoreProcessor : ScoreProcessor<EmptyFreeformHitObject>
     {
-        public EmptyFreeformRulesetScoreProcessor(DrawableRuleset<EmptyFreeformRulesetHitObject> ruleset)
+        public EmptyFreeformScoreProcessor(DrawableRuleset<EmptyFreeformHitObject> ruleset)
             : base(ruleset)
         {
         }
