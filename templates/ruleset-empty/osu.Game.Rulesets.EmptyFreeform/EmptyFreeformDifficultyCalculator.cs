@@ -9,11 +9,11 @@ using osu.Game.Rulesets.Difficulty.Preprocessing;
 using osu.Game.Rulesets.Difficulty.Skills;
 using osu.Game.Rulesets.Mods;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset
+namespace osu.Game.Rulesets.EmptyFreeform
 {
-    public class EmptyFreeformRulesetDifficultyCalculator : DifficultyCalculator
+    public class EmptyFreeformDifficultyCalculator : DifficultyCalculator
     {
-        public EmptyFreeformRulesetDifficultyCalculator(Ruleset ruleset, WorkingBeatmap beatmap)
+        public EmptyFreeformDifficultyCalculator(Ruleset ruleset, WorkingBeatmap beatmap)
             : base(ruleset, beatmap)
         {
         }

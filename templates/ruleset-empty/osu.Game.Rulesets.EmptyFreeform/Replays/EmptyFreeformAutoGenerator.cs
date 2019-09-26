@@ -4,19 +4,19 @@
 using System.Collections.Generic;
 using osu.Game.Beatmaps;
 using osu.Game.Replays;
-using osu.Game.Rulesets.EmptyFreeformRuleset.Objects;
+using osu.Game.Rulesets.EmptyFreeform.Objects;
 using osu.Game.Rulesets.Replays;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.Replays
+namespace osu.Game.Rulesets.EmptyFreeform.Replays
 {
-    public class EmptyFreeformRulesetAutoGenerator : AutoGenerator
+    public class EmptyFreeformAutoGenerator : AutoGenerator
     {
         protected Replay Replay;
         protected List<ReplayFrame> Frames => Replay.Frames;
 
-        public new Beatmap<EmptyFreeformRulesetHitObject> Beatmap => (Beatmap<EmptyFreeformRulesetHitObject>)base.Beatmap;
+        public new Beatmap<EmptyFreeformHitObject> Beatmap => (Beatmap<EmptyFreeformHitObject>)base.Beatmap;
 
-        public EmptyFreeformRulesetAutoGenerator(IBeatmap beatmap)
+        public EmptyFreeformAutoGenerator(IBeatmap beatmap)
             : base(beatmap)
         {
             Replay = new Replay();
@@ -24,11 +24,11 @@ namespace osu.Game.Rulesets.EmptyFreeformRuleset.Replays
 
         public override Replay Generate()
         {
-            Frames.Add(new EmptyFreeformRulesetReplayFrame());
+            Frames.Add(new EmptyFreeformReplayFrame());
 
-            foreach (EmptyFreeformRulesetHitObject hitObject in Beatmap.HitObjects)
+            foreach (EmptyFreeformHitObject hitObject in Beatmap.HitObjects)
             {
-                Frames.Add(new EmptyFreeformRulesetReplayFrame
+                Frames.Add(new EmptyFreeformReplayFrame
                 {
                     Time = hitObject.StartTime,
                     Position = hitObject.Position,

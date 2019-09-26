@@ -4,14 +4,14 @@
 using System;
 using System.Collections.Generic;
 using osu.Game.Beatmaps;
+using osu.Game.Rulesets.EmptyFreeform.Objects;
 using osu.Game.Rulesets.Objects;
-using osu.Game.Rulesets.EmptyFreeformRuleset.Objects;
 using osu.Game.Rulesets.Objects.Types;
 using osuTK;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.Beatmaps
+namespace osu.Game.Rulesets.EmptyFreeform.Beatmaps
 {
-    public class EmptyFreeformRulesetBeatmapConverter : BeatmapConverter<EmptyFreeformRulesetHitObject>
+    public class EmptyFreeformBeatmapConverter : BeatmapConverter<EmptyFreeformHitObject>
     {
         protected override IEnumerable<Type> ValidConversionTypes { get; } = new[]
         {
@@ -20,14 +20,14 @@ namespace osu.Game.Rulesets.EmptyFreeformRuleset.Beatmaps
             typeof(IHasPosition)
         };
 
-        public EmptyFreeformRulesetBeatmapConverter(IBeatmap beatmap)
+        public EmptyFreeformBeatmapConverter(IBeatmap beatmap)
             : base(beatmap)
         {
         }
 
-        protected override IEnumerable<EmptyFreeformRulesetHitObject> ConvertHitObject(HitObject original, IBeatmap beatmap)
+        protected override IEnumerable<EmptyFreeformHitObject> ConvertHitObject(HitObject original, IBeatmap beatmap)
         {
-            yield return new EmptyFreeformRulesetHitObject
+            yield return new EmptyFreeformHitObject
             {
                 Samples = original.Samples,
                 StartTime = original.StartTime,

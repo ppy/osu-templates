@@ -8,7 +8,7 @@ using osu.Framework.Platform;
 using osu.Game.Tests.Visual;
 using osuTK.Graphics;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.Tests
+namespace osu.Game.Rulesets.EmptyFreeform.Tests
 {
     public class TestSceneOsuGame : OsuTestScene
     {
