@@ -2,15 +2,15 @@
 // See the LICENCE file in the repository root for full licence text.
 
 using osu.Game.Beatmaps;
+using osu.Game.Rulesets.EmptyFreeform.Objects;
+using osu.Game.Rulesets.EmptyFreeform.Replays;
 using osu.Game.Rulesets.Mods;
-using osu.Game.Rulesets.EmptyFreeformRuleset.Objects;
-using osu.Game.Rulesets.EmptyFreeformRuleset.Replays;
 using osu.Game.Scoring;
 using osu.Game.Users;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.Mods
+namespace osu.Game.Rulesets.EmptyFreeform.Mods
 {
-    public class EmptyFreeformRulesetModAutoplay : ModAutoplay<EmptyFreeformRulesetHitObject>
+    public class EmptyFreeformModAutoplay : ModAutoplay<EmptyFreeformHitObject>
     {
         public override Score CreateReplayScore(IBeatmap beatmap) => new Score
         {
@@ -18,7 +18,7 @@ namespace osu.Game.Rulesets.EmptyFreeformRuleset.Mods
             {
                 User = new User { Username = "sample" },
             },
-            Replay = new EmptyFreeformRulesetAutoGenerator(beatmap).Generate(),
+            Replay = new EmptyFreeformAutoGenerator(beatmap).Generate(),
         };
     }
 }

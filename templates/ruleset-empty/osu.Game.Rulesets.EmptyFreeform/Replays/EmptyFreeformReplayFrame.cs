@@ -5,14 +5,14 @@ using System.Collections.Generic;
 using osu.Game.Rulesets.Replays;
 using osuTK;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.Replays
+namespace osu.Game.Rulesets.EmptyFreeform.Replays
 {
-    public class EmptyFreeformRulesetReplayFrame : ReplayFrame
+    public class EmptyFreeformReplayFrame : ReplayFrame
     {
-        public List<EmptyFreeformRulesetAction> Actions = new List<EmptyFreeformRulesetAction>();
+        public List<EmptyFreeformAction> Actions = new List<EmptyFreeformAction>();
         public Vector2 Position;
 
-        public EmptyFreeformRulesetReplayFrame(EmptyFreeformRulesetAction? button = null)
+        public EmptyFreeformReplayFrame(EmptyFreeformAction? button = null)
         {
             if (button.HasValue)
                 Actions.Add(button.Value);

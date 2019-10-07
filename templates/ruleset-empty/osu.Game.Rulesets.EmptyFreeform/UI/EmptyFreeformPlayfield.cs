@@ -5,10 +5,10 @@ using osu.Framework.Allocation;
 using osu.Framework.Graphics;
 using osu.Game.Rulesets.UI;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.UI
+namespace osu.Game.Rulesets.EmptyFreeform.UI
 {
     [Cached]
-    public class EmptyFreeformRulesetPlayfield : Playfield
+    public class EmptyFreeformPlayfield : Playfield
     {
         [BackgroundDependencyLoader]
         private void load()

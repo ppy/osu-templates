@@ -10,16 +10,16 @@ using osu.Game.Replays;
 using osu.Game.Rulesets.Replays;
 using osuTK;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.Replays
+namespace osu.Game.Rulesets.EmptyFreeform.Replays
 {
-    public class EmptyFreeformRulesetFramedReplayInputHandler : FramedReplayInputHandler<EmptyFreeformRulesetReplayFrame>
+    public class EmptyFreeformFramedReplayInputHandler : FramedReplayInputHandler<EmptyFreeformReplayFrame>
     {
-        public EmptyFreeformRulesetFramedReplayInputHandler(Replay replay)
+        public EmptyFreeformFramedReplayInputHandler(Replay replay)
             : base(replay)
         {
         }
 
-        protected override bool IsImportant(EmptyFreeformRulesetReplayFrame frame) => frame.Actions.Any();
+        protected override bool IsImportant(EmptyFreeformReplayFrame frame) => frame.Actions.Any();
 
         protected Vector2 Position
         {
@@ -44,9 +44,9 @@ namespace osu.Game.Rulesets.EmptyFreeformRuleset.Replays
                 {
                     Position = GamefieldToScreenSpace(Position),
                 },
-                new ReplayState<EmptyFreeformRulesetAction>
+                new ReplayState<EmptyFreeformAction>
                 {
-                    PressedActions = CurrentFrame?.Actions ?? new List<EmptyFreeformRulesetAction>(),
+                    PressedActions = CurrentFrame?.Actions ?? new List<EmptyFreeformAction>(),
                 }
             };
         }

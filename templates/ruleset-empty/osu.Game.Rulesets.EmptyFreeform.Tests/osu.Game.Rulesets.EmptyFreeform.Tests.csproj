@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-      <StartupObject>osu.Game.Rulesets.EmptyFreeformRuleset.Tests.VisualTestRunner</StartupObject>
+      <StartupObject>osu.Game.Rulesets.EmptyFreeform.Tests.VisualTestRunner</StartupObject>
     </PropertyGroup>
     <ItemGroup Label="Service">
       <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
@@ -16,11 +16,11 @@
     <PackageReference Update="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.4" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\osu.Game.Rulesets.EmptyFreeformRuleset\osu.Game.Rulesets.EmptyFreeformRuleset.csproj"/>
+    <ProjectReference Include="..\osu.Game.Rulesets.EmptyFreeform\osu.Game.Rulesets.EmptyFreeform.csproj" />
   </ItemGroup>
   <PropertyGroup Label="Project">
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <RootNamespace>osu.Game.Rulesets.EmptyFreeformRuleset.Tests</RootNamespace>
+    <RootNamespace>osu.Game.Rulesets.EmptyFreeform.Tests</RootNamespace>
   </PropertyGroup>
 </Project>

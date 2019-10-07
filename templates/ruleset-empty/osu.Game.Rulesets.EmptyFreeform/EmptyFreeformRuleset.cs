@@ -10,19 +10,19 @@ using osu.Framework.Input.Bindings;
 using osu.Game.Beatmaps;
 using osu.Game.Graphics;
 using osu.Game.Rulesets.Difficulty;
+using osu.Game.Rulesets.EmptyFreeform.Beatmaps;
+using osu.Game.Rulesets.EmptyFreeform.Mods;
+using osu.Game.Rulesets.EmptyFreeform.UI;
 using osu.Game.Rulesets.Mods;
-using osu.Game.Rulesets.EmptyFreeformRuleset.Beatmaps;
-using osu.Game.Rulesets.EmptyFreeformRuleset.Mods;
-using osu.Game.Rulesets.EmptyFreeformRuleset.UI;
 using osu.Game.Rulesets.UI;
 using osuTK;
 using osuTK.Graphics;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset
+namespace osu.Game.Rulesets.EmptyFreeform
 {
-    public class EmptyFreeformRulesetRuleset : Ruleset
+    public class EmptyFreeformRuleset : Ruleset
     {
-        public EmptyFreeformRulesetRuleset(RulesetInfo rulesetInfo = null)
+        public EmptyFreeformRuleset(RulesetInfo rulesetInfo = null)
             : base(rulesetInfo)
         {
         }
@@ -30,20 +30,20 @@ namespace osu.Game.Rulesets.EmptyFreeformRuleset
         public override string Description => "a very emptyfreeformruleset ruleset";
 
         public override DrawableRuleset CreateDrawableRulesetWith(IWorkingBeatmap beatmap, IReadOnlyList<Mod> mods) =>
-            new DrawableEmptyFreeformRulesetRuleset(this, beatmap, mods);
+            new DrawableEmptyFreeformRuleset(this, beatmap, mods);
 
         public override IBeatmapConverter CreateBeatmapConverter(IBeatmap beatmap) =>
-            new EmptyFreeformRulesetBeatmapConverter(beatmap);
+            new EmptyFreeformBeatmapConverter(beatmap);
 
         public override DifficultyCalculator CreateDifficultyCalculator(WorkingBeatmap beatmap) =>
-            new EmptyFreeformRulesetDifficultyCalculator(this, beatmap);
+            new EmptyFreeformDifficultyCalculator(this, beatmap);
 
         public override IEnumerable<Mod> GetModsFor(ModType type)
         {
             switch (type)
             {
                 case ModType.Automation:
-                    return new[] { new EmptyFreeformRulesetModAutoplay() };
+                    return new[] { new EmptyFreeformModAutoplay() };
 
                 default:
                     return new Mod[] { null };
@@ -54,8 +54,8 @@ namespace osu.Game.Rulesets.EmptyFreeformRuleset
 
         public override IEnumerable<KeyBinding> GetDefaultKeyBindings(int variant = 0) => new[]
         {
-            new KeyBinding(InputKey.Z, EmptyFreeformRulesetAction.Button1),
-            new KeyBinding(InputKey.X, EmptyFreeformRulesetAction.Button2),
+            new KeyBinding(InputKey.Z, EmptyFreeformAction.Button1),
+            new KeyBinding(InputKey.X, EmptyFreeformAction.Button2),
         };
 
         public override Drawable CreateIcon() => new Icon(ShortName[0]);

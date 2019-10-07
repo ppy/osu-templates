@@ -6,9 +6,9 @@ using osu.Game.Rulesets.Objects;
 using osu.Game.Rulesets.Objects.Types;
 using osuTK;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.Objects
+namespace osu.Game.Rulesets.EmptyFreeform.Objects
 {
-    public class EmptyFreeformRulesetHitObject : HitObject, IHasPosition
+    public class EmptyFreeformHitObject : HitObject, IHasPosition
     {
         public override Judgement CreateJudgement() => new Judgement();
 

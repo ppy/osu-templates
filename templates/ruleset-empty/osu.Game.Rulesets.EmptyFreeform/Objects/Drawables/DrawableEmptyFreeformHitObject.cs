@@ -7,11 +7,11 @@ using osu.Game.Rulesets.Scoring;
 using osuTK;
 using osuTK.Graphics;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset.Objects.Drawables
+namespace osu.Game.Rulesets.EmptyFreeform.Objects.Drawables
 {
-    public class DrawableEmptyFreeformRulesetHitObject : DrawableHitObject<EmptyFreeformRulesetHitObject>
+    public class DrawableEmptyFreeformHitObject : DrawableHitObject<EmptyFreeformHitObject>
     {
-        public DrawableEmptyFreeformRulesetHitObject(EmptyFreeformRulesetHitObject hitObject)
+        public DrawableEmptyFreeformHitObject(EmptyFreeformHitObject hitObject)
             : base(hitObject)
         {
             Size = new Vector2(40);

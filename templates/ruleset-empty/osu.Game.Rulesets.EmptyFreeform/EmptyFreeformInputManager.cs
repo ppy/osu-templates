@@ -5,17 +5,17 @@ using System.ComponentModel;
 using osu.Framework.Input.Bindings;
 using osu.Game.Rulesets.UI;
 
-namespace osu.Game.Rulesets.EmptyFreeformRuleset
+namespace osu.Game.Rulesets.EmptyFreeform
 {
-    public class EmptyFreeformRulesetInputManager : RulesetInputManager<EmptyFreeformRulesetAction>
+    public class EmptyFreeformInputManager : RulesetInputManager<EmptyFreeformAction>
     {
-        public EmptyFreeformRulesetInputManager(RulesetInfo ruleset)
+        public EmptyFreeformInputManager(RulesetInfo ruleset)
             : base(ruleset, 0, SimultaneousBindingMode.Unique)
         {
         }
     }
 
-    public enum EmptyFreeformRulesetAction
+    public enum EmptyFreeformAction
     {
         [Description("Button 1")]
         Button1,
