@@ -11,7 +11,7 @@ using osu.Game.Rulesets.Difficulty;
 using osu.Game.Rulesets.Mods;
 using osu.Game.Rulesets.EmptyScrolling.Beatmaps;
 using osu.Game.Rulesets.EmptyScrolling.Mods;
-using osu.Game.Rulesets.EmptyFreeform.Scoring;
+using osu.Game.Rulesets.EmptyScrolling.Scoring;
 using osu.Game.Rulesets.EmptyScrolling.UI;
 using osu.Game.Rulesets.Scoring;
 using osu.Game.Rulesets.UI;
