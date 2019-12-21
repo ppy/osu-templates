@@ -12,8 +12,6 @@ using osu.Game.Rulesets.Objects.Drawables;
 using osu.Game.Rulesets.Pippidon.Objects;
 using osu.Game.Rulesets.Pippidon.Objects.Drawables;
 using osu.Game.Rulesets.Pippidon.Replays;
-using osu.Game.Rulesets.Pippidon.Scoring;
-using osu.Game.Rulesets.Scoring;
 using osu.Game.Rulesets.UI;
 using osu.Game.Rulesets.UI.Scrolling;
 
@@ -22,14 +20,12 @@ namespace osu.Game.Rulesets.Pippidon.UI
     [Cached]
     public class DrawablePippidonRuleset : DrawableScrollingRuleset<PippidonHitObject>
     {
-        public DrawablePippidonRuleset(PippidonRuleset ruleset, IWorkingBeatmap beatmap, IReadOnlyList<Mod> mods)
+        public DrawablePippidonRuleset(PippidonRuleset ruleset, IBeatmap beatmap, IReadOnlyList<Mod> mods)
             : base(ruleset, beatmap, mods)
         {
             Direction.Value = ScrollingDirection.Left;
             TimeRange.Value = 6000;
         }
-
-        public override ScoreProcessor CreateScoreProcessor() => new PippidonScoreProcessor(this);
 
         protected override Playfield CreatePlayfield() => new PippidonPlayfield();
 
