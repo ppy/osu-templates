@@ -12,8 +12,6 @@ using osu.Game.Rulesets.Objects.Drawables;
 using osu.Game.Rulesets.Pippidon.Objects;
 using osu.Game.Rulesets.Pippidon.Objects.Drawables;
 using osu.Game.Rulesets.Pippidon.Replays;
-using osu.Game.Rulesets.Pippidon.Scoring;
-using osu.Game.Rulesets.Scoring;
 using osu.Game.Rulesets.UI;
 
 namespace osu.Game.Rulesets.Pippidon.UI
@@ -21,12 +19,10 @@ namespace osu.Game.Rulesets.Pippidon.UI
     [Cached]
     public class DrawablePippidonRuleset : DrawableRuleset<PippidonHitObject>
     {
-        public DrawablePippidonRuleset(PippidonRuleset ruleset, IWorkingBeatmap beatmap, IReadOnlyList<Mod> mods)
+        public DrawablePippidonRuleset(PippidonRuleset ruleset, IBeatmap beatmap, IReadOnlyList<Mod> mods)
             : base(ruleset, beatmap, mods)
         {
         }
-
-        public override ScoreProcessor CreateScoreProcessor() => new PippidonScoreProcessor(this);
 
         public override PlayfieldAdjustmentContainer CreatePlayfieldAdjustmentContainer() => new PippidonPlayfieldAdjustmentContainer();
 
