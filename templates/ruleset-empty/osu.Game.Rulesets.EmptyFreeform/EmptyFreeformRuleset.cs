@@ -12,7 +12,9 @@ using osu.Game.Graphics;
 using osu.Game.Rulesets.Difficulty;
 using osu.Game.Rulesets.EmptyFreeform.Beatmaps;
 using osu.Game.Rulesets.EmptyFreeform.Mods;
+using osu.Game.Rulesets.EmptyFreeform.Scoring;
 using osu.Game.Rulesets.EmptyFreeform.UI;
+using osu.Game.Rulesets.Scoring;
 using osu.Game.Rulesets.Mods;
 using osu.Game.Rulesets.UI;
 using osuTK;
@@ -22,15 +24,12 @@ namespace osu.Game.Rulesets.EmptyFreeform
 {
     public class EmptyFreeformRuleset : Ruleset
     {
-        public EmptyFreeformRuleset(RulesetInfo rulesetInfo = null)
-            : base(rulesetInfo)
-        {
-        }
-
         public override string Description => "a very emptyfreeformruleset ruleset";
 
-        public override DrawableRuleset CreateDrawableRulesetWith(IWorkingBeatmap beatmap, IReadOnlyList<Mod> mods) =>
+        public override DrawableRuleset CreateDrawableRulesetWith(IBeatmap beatmap, IReadOnlyList<Mod> mods) =>
             new DrawableEmptyFreeformRuleset(this, beatmap, mods);
+
+        public override ScoreProcessor CreateScoreProcessor(IBeatmap beatmap) => new EmptyFreeformScoreProcessor(beatmap);
 
         public override IBeatmapConverter CreateBeatmapConverter(IBeatmap beatmap) =>
             new EmptyFreeformBeatmapConverter(beatmap);

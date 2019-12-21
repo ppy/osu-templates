@@ -21,12 +21,10 @@ namespace osu.Game.Rulesets.EmptyFreeform.UI
     [Cached]
     public class DrawableEmptyFreeformRuleset : DrawableRuleset<EmptyFreeformHitObject>
     {
-        public DrawableEmptyFreeformRuleset(EmptyFreeformRuleset ruleset, IWorkingBeatmap beatmap, IReadOnlyList<Mod> mods)
+        public DrawableEmptyFreeformRuleset(EmptyFreeformRuleset ruleset, IBeatmap beatmap, IReadOnlyList<Mod> mods)
             : base(ruleset, beatmap, mods)
         {
         }
-
-        public override ScoreProcessor CreateScoreProcessor() => new EmptyFreeformScoreProcessor(this);
 
         protected override Playfield CreatePlayfield() => new EmptyFreeformPlayfield();
 

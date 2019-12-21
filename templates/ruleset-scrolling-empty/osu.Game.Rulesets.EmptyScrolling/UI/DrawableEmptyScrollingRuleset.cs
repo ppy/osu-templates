@@ -22,14 +22,12 @@ namespace osu.Game.Rulesets.EmptyScrolling.UI
     [Cached]
     public class DrawableEmptyScrollingRuleset : DrawableScrollingRuleset<EmptyScrollingHitObject>
     {
-        public DrawableEmptyScrollingRuleset(EmptyScrollingRuleset ruleset, IWorkingBeatmap beatmap, IReadOnlyList<Mod> mods)
+        public DrawableEmptyScrollingRuleset(EmptyScrollingRuleset ruleset, IBeatmap beatmap, IReadOnlyList<Mod> mods)
             : base(ruleset, beatmap, mods)
         {
             Direction.Value = ScrollingDirection.Left;
             TimeRange.Value = 6000;
         }
-
-        public override ScoreProcessor CreateScoreProcessor() => new EmptyScrollingScoreProcessor(this);
 
         protected override Playfield CreatePlayfield() => new EmptyScrollingPlayfield();
 
