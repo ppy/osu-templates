@@ -26,7 +26,7 @@ namespace osu.Game.Rulesets.EmptyFreeform
     {
         public override string Description => "a very emptyfreeformruleset ruleset";
 
-        public override DrawableRuleset CreateDrawableRulesetWith(IBeatmap beatmap, IReadOnlyList<Mod> mods) =>
+        public override DrawableRuleset CreateDrawableRulesetWith(IBeatmap beatmap, IReadOnlyList<Mod> mods = null) =>
             new DrawableEmptyFreeformRuleset(this, beatmap, mods);
 
         public override ScoreProcessor CreateScoreProcessor(IBeatmap beatmap) => new EmptyFreeformScoreProcessor(beatmap);

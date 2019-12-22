@@ -22,7 +22,7 @@ namespace osu.Game.Rulesets.EmptyScrolling
     {
         public override string Description => "a very emptyscrolling ruleset";
 
-        public override DrawableRuleset CreateDrawableRulesetWith(IBeatmap beatmap, IReadOnlyList<Mod> mods) => new DrawableEmptyScrollingRuleset(this, beatmap, mods);
+        public override DrawableRuleset CreateDrawableRulesetWith(IBeatmap beatmap, IReadOnlyList<Mod> mods = null) => new DrawableEmptyScrollingRuleset(this, beatmap, mods);
 
         public override ScoreProcessor CreateScoreProcessor(IBeatmap beatmap) => new EmptyScrollingScoreProcessor(beatmap);
 

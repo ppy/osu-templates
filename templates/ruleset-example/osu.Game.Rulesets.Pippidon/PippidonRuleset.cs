@@ -22,7 +22,7 @@ namespace osu.Game.Rulesets.Pippidon
     {
         public override string Description => "gather the osu!coins";
 
-        public override DrawableRuleset CreateDrawableRulesetWith(IBeatmap beatmap, IReadOnlyList<Mod> mods) =>
+        public override DrawableRuleset CreateDrawableRulesetWith(IBeatmap beatmap, IReadOnlyList<Mod> mods = null) =>
             new DrawablePippidonRuleset(this, beatmap, mods);
 
         public override ScoreProcessor CreateScoreProcessor(IBeatmap beatmap) => new PippidonScoreProcessor(beatmap);

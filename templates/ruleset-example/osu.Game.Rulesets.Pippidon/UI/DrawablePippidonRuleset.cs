@@ -19,7 +19,7 @@ namespace osu.Game.Rulesets.Pippidon.UI
     [Cached]
     public class DrawablePippidonRuleset : DrawableRuleset<PippidonHitObject>
     {
-        public DrawablePippidonRuleset(PippidonRuleset ruleset, IBeatmap beatmap, IReadOnlyList<Mod> mods)
+        public DrawablePippidonRuleset(PippidonRuleset ruleset, IBeatmap beatmap, IReadOnlyList<Mod> mods = null)
             : base(ruleset, beatmap, mods)
         {
         }
