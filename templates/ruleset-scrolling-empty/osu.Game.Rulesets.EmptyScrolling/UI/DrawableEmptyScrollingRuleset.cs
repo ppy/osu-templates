@@ -12,8 +12,6 @@ using osu.Game.Rulesets.Objects.Drawables;
 using osu.Game.Rulesets.EmptyScrolling.Objects;
 using osu.Game.Rulesets.EmptyScrolling.Objects.Drawables;
 using osu.Game.Rulesets.EmptyScrolling.Replays;
-using osu.Game.Rulesets.EmptyScrolling.Scoring;
-using osu.Game.Rulesets.Scoring;
 using osu.Game.Rulesets.UI;
 using osu.Game.Rulesets.UI.Scrolling;
 
@@ -22,14 +20,12 @@ namespace osu.Game.Rulesets.EmptyScrolling.UI
     [Cached]
     public class DrawableEmptyScrollingRuleset : DrawableScrollingRuleset<EmptyScrollingHitObject>
     {
-        public DrawableEmptyScrollingRuleset(EmptyScrollingRuleset ruleset, IWorkingBeatmap beatmap, IReadOnlyList<Mod> mods)
+        public DrawableEmptyScrollingRuleset(EmptyScrollingRuleset ruleset, IBeatmap beatmap, IReadOnlyList<Mod> mods = null)
             : base(ruleset, beatmap, mods)
         {
             Direction.Value = ScrollingDirection.Left;
             TimeRange.Value = 6000;
         }
-
-        public override ScoreProcessor CreateScoreProcessor() => new EmptyScrollingScoreProcessor(this);
 
         protected override Playfield CreatePlayfield() => new EmptyScrollingPlayfield();
 

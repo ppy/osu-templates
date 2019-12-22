@@ -11,21 +11,20 @@ using osu.Game.Rulesets.Difficulty;
 using osu.Game.Rulesets.Mods;
 using osu.Game.Rulesets.EmptyScrolling.Beatmaps;
 using osu.Game.Rulesets.EmptyScrolling.Mods;
+using osu.Game.Rulesets.EmptyScrolling.Scoring;
 using osu.Game.Rulesets.EmptyScrolling.UI;
+using osu.Game.Rulesets.Scoring;
 using osu.Game.Rulesets.UI;
 
 namespace osu.Game.Rulesets.EmptyScrolling
 {
     public class EmptyScrollingRuleset : Ruleset
     {
-        public EmptyScrollingRuleset(RulesetInfo rulesetInfo = null)
-            : base(rulesetInfo)
-        {
-        }
-
         public override string Description => "a very emptyscrolling ruleset";
 
-        public override DrawableRuleset CreateDrawableRulesetWith(IWorkingBeatmap beatmap, IReadOnlyList<Mod> mods) => new DrawableEmptyScrollingRuleset(this, beatmap, mods);
+        public override DrawableRuleset CreateDrawableRulesetWith(IBeatmap beatmap, IReadOnlyList<Mod> mods = null) => new DrawableEmptyScrollingRuleset(this, beatmap, mods);
+
+        public override ScoreProcessor CreateScoreProcessor(IBeatmap beatmap) => new EmptyScrollingScoreProcessor(beatmap);
 
         public override IBeatmapConverter CreateBeatmapConverter(IBeatmap beatmap) => new EmptyScrollingBeatmapConverter(beatmap);
 

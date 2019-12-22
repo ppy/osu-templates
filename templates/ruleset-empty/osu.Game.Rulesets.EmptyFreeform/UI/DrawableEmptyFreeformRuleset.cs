@@ -10,10 +10,8 @@ using osu.Game.Replays;
 using osu.Game.Rulesets.EmptyFreeform.Objects;
 using osu.Game.Rulesets.EmptyFreeform.Objects.Drawables;
 using osu.Game.Rulesets.EmptyFreeform.Replays;
-using osu.Game.Rulesets.EmptyFreeform.Scoring;
 using osu.Game.Rulesets.Mods;
 using osu.Game.Rulesets.Objects.Drawables;
-using osu.Game.Rulesets.Scoring;
 using osu.Game.Rulesets.UI;
 
 namespace osu.Game.Rulesets.EmptyFreeform.UI
@@ -21,12 +19,10 @@ namespace osu.Game.Rulesets.EmptyFreeform.UI
     [Cached]
     public class DrawableEmptyFreeformRuleset : DrawableRuleset<EmptyFreeformHitObject>
     {
-        public DrawableEmptyFreeformRuleset(EmptyFreeformRuleset ruleset, IWorkingBeatmap beatmap, IReadOnlyList<Mod> mods)
+        public DrawableEmptyFreeformRuleset(EmptyFreeformRuleset ruleset, IBeatmap beatmap, IReadOnlyList<Mod> mods = null)
             : base(ruleset, beatmap, mods)
         {
         }
-
-        public override ScoreProcessor CreateScoreProcessor() => new EmptyFreeformScoreProcessor(this);
 
         protected override Playfield CreatePlayfield() => new EmptyFreeformPlayfield();
 
