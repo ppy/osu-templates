@@ -12,8 +12,6 @@ using osu.Game.Rulesets.Objects.Drawables;
 using osu.Game.Rulesets.EmptyScrolling.Objects;
 using osu.Game.Rulesets.EmptyScrolling.Objects.Drawables;
 using osu.Game.Rulesets.EmptyScrolling.Replays;
-using osu.Game.Rulesets.EmptyScrolling.Scoring;
-using osu.Game.Rulesets.Scoring;
 using osu.Game.Rulesets.UI;
 using osu.Game.Rulesets.UI.Scrolling;
 
