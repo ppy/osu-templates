@@ -26,7 +26,7 @@ namespace osu.Game.Rulesets.EmptyScrolling
 
         public override ScoreProcessor CreateScoreProcessor(IBeatmap beatmap) => new EmptyScrollingScoreProcessor(beatmap);
 
-        public override IBeatmapConverter CreateBeatmapConverter(IBeatmap beatmap) => new EmptyScrollingBeatmapConverter(beatmap);
+        public override IBeatmapConverter CreateBeatmapConverter(IBeatmap beatmap) => new EmptyScrollingBeatmapConverter(beatmap, this);
 
         public override DifficultyCalculator CreateDifficultyCalculator(WorkingBeatmap beatmap) => new EmptyScrollingDifficultyCalculator(this, beatmap);
 

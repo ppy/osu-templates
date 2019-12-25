@@ -32,7 +32,7 @@ namespace osu.Game.Rulesets.EmptyFreeform
         public override ScoreProcessor CreateScoreProcessor(IBeatmap beatmap) => new EmptyFreeformScoreProcessor(beatmap);
 
         public override IBeatmapConverter CreateBeatmapConverter(IBeatmap beatmap) =>
-            new EmptyFreeformBeatmapConverter(beatmap);
+            new EmptyFreeformBeatmapConverter(beatmap, this);
 
         public override DifficultyCalculator CreateDifficultyCalculator(WorkingBeatmap beatmap) =>
             new EmptyFreeformDifficultyCalculator(this, beatmap);

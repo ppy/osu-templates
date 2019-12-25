@@ -26,7 +26,7 @@ namespace osu.Game.Rulesets.Pippidon
 
         public override ScoreProcessor CreateScoreProcessor(IBeatmap beatmap) => new PippidonScoreProcessor(beatmap);
 
-        public override IBeatmapConverter CreateBeatmapConverter(IBeatmap beatmap) => new PippidonBeatmapConverter(beatmap);
+        public override IBeatmapConverter CreateBeatmapConverter(IBeatmap beatmap) => new PippidonBeatmapConverter(beatmap, this);
 
         public override DifficultyCalculator CreateDifficultyCalculator(WorkingBeatmap beatmap) => new PippidonDifficultyCalculator(this, beatmap);
 
