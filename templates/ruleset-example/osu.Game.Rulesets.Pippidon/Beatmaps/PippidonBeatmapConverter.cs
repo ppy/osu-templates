@@ -13,12 +13,12 @@ namespace osu.Game.Rulesets.Pippidon.Beatmaps
 {
     public class PippidonBeatmapConverter : BeatmapConverter<PippidonHitObject>
     {
-        public override bool CanConvert() => Beatmap.HitObjects.All(h => h is IHasPosition);
-
         public PippidonBeatmapConverter(IBeatmap beatmap, Ruleset ruleset)
             : base(beatmap, ruleset)
         {
         }
+
+        public override bool CanConvert() => Beatmap.HitObjects.All(h => h is IHasPosition);
 
         protected override IEnumerable<PippidonHitObject> ConvertHitObject(HitObject original, IBeatmap beatmap)
         {
