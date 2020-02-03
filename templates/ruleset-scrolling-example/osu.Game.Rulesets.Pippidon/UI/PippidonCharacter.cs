@@ -78,8 +78,10 @@ namespace osu.Game.Rulesets.Pippidon.UI
             }
         }
 
-        private void changeLane(int change) => LanePosition.Value = (LanePosition.Value + change + PippidonPlayfield.LANE_COUNT) % PippidonPlayfield.LANE_COUNT;
+        public void OnReleased(PippidonAction action)
+        {
+        }
 
-        public bool OnReleased(PippidonAction action) => false;
+        private void changeLane(int change) => LanePosition.Value = (LanePosition.Value + change + PippidonPlayfield.LANE_COUNT) % PippidonPlayfield.LANE_COUNT;
     }
 }

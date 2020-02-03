@@ -1,7 +1,6 @@
 ﻿// Copyright (c) ppy Pty Ltd <contact@ppy.sh>. Licensed under the MIT Licence.
 // See the LICENCE file in the repository root for full licence text.
 
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using osu.Game.Beatmaps;
@@ -18,14 +17,14 @@ namespace osu.Game.Rulesets.Pippidon.Beatmaps
         private readonly float minPosition;
         private readonly float maxPosition;
 
-        protected override IEnumerable<Type> ValidConversionTypes { get; } = new[] { typeof(IHasXPosition), typeof(IHasYPosition) };
-
-        public PippidonBeatmapConverter(IBeatmap beatmap)
-            : base(beatmap)
+        public PippidonBeatmapConverter(IBeatmap beatmap, Ruleset ruleset)
+            : base(beatmap, ruleset)
         {
             minPosition = beatmap.HitObjects.Min(getUsablePosition);
             maxPosition = beatmap.HitObjects.Max(getUsablePosition);
         }
+
+        public override bool CanConvert() => Beatmap.HitObjects.All(h => h is IHasXPosition && h is IHasYPosition);
 
         protected override IEnumerable<PippidonHitObject> ConvertHitObject(HitObject original, IBeatmap beatmap)
         {

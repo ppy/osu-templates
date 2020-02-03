@@ -11,9 +11,7 @@ using osu.Game.Rulesets.Difficulty;
 using osu.Game.Rulesets.Mods;
 using osu.Game.Rulesets.Pippidon.Beatmaps;
 using osu.Game.Rulesets.Pippidon.Mods;
-using osu.Game.Rulesets.Pippidon.Scoring;
 using osu.Game.Rulesets.Pippidon.UI;
-using osu.Game.Rulesets.Scoring;
 using osu.Game.Rulesets.UI;
 
 namespace osu.Game.Rulesets.Pippidon
@@ -24,9 +22,7 @@ namespace osu.Game.Rulesets.Pippidon
 
         public override DrawableRuleset CreateDrawableRulesetWith(IBeatmap beatmap, IReadOnlyList<Mod> mods = null) => new DrawablePippidonRuleset(this, beatmap, mods);
 
-        public override ScoreProcessor CreateScoreProcessor(IBeatmap beatmap) => new PippidonScoreProcessor(beatmap);
-
-        public override IBeatmapConverter CreateBeatmapConverter(IBeatmap beatmap) => new PippidonBeatmapConverter(beatmap);
+        public override IBeatmapConverter CreateBeatmapConverter(IBeatmap beatmap) => new PippidonBeatmapConverter(beatmap, this);
 
         public override DifficultyCalculator CreateDifficultyCalculator(WorkingBeatmap beatmap) => new PippidonDifficultyCalculator(this, beatmap);
 
