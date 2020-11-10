@@ -13,7 +13,7 @@
                 "osu.Game.Rulesets.Pippidon.Tests.csproj",
                 "-p:GenerateFullPaths=true",
                 "-m",
-                "/verbosity:m"
+                "-verbosity:m"
             ],
             "group": "build",
             "problemMatcher": "$msCompile"
@@ -29,7 +29,7 @@
                 "-p:Configuration=Release",
                 "-p:GenerateFullPaths=true",
                 "-m",
-                "/verbosity:m"
+                "-verbosity:m"
             ],
             "group": "build",
             "problemMatcher": "$msCompile"
