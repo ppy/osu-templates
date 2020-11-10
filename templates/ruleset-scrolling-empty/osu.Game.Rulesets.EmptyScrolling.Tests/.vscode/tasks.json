@@ -11,8 +11,8 @@
                 "build",
                 "--no-restore",
                 "osu.Game.Rulesets.EmptyScrolling.Tests.csproj",
-                "/p:GenerateFullPaths=true",
-                "/m",
+                "-p:GenerateFullPaths=true",
+                "-m",
                 "/verbosity:m"
             ],
             "group": "build",
@@ -26,9 +26,9 @@
                 "build",
                 "--no-restore",
                 "osu.Game.Rulesets.EmptyScrolling.Tests.csproj",
-                "/p:Configuration=Release",
-                "/p:GenerateFullPaths=true",
-                "/m",
+                "-p:Configuration=Release",
+                "-p:GenerateFullPaths=true",
+                "-m",
                 "/verbosity:m"
             ],
             "group": "build",
