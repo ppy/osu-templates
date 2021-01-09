@@ -118,7 +118,7 @@ namespace osu.Game.Rulesets.Pippidon.UI
                 }
             }
 
-            protected override void OnNewBeat(int beatIndex, TimingControlPoint timingPoint, EffectControlPoint effectPoint, TrackAmplitudes amplitudes)
+            protected override void OnNewBeat(int beatIndex, TimingControlPoint timingPoint, EffectControlPoint effectPoint, ChannelAmplitudes amplitudes)
             {
                 if (effectPoint.KiaiMode)
                     fill.FlashColour(colours.PinkLight, 800, Easing.In);

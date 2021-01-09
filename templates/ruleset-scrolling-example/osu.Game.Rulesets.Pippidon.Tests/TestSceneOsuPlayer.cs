@@ -9,9 +9,6 @@ namespace osu.Game.Rulesets.Pippidon.Tests
     [TestFixture]
     public class TestSceneOsuPlayer : PlayerTestScene
     {
-        public TestSceneOsuPlayer()
-            : base(new PippidonRuleset())
-        {
-        }
+        protected override Ruleset CreatePlayerRuleset() => new PippidonRuleset();
     }
 }
