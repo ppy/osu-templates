@@ -57,7 +57,7 @@ namespace osu.Game.Rulesets.Pippidon.Objects.Drawables
 
         protected override void UpdateInitialTransforms() => this.FadeInFromZero(time_fadein);
 
-        protected override void UpdateStateTransforms(ArmedState state)
+        protected override void UpdateHitStateTransforms(ArmedState state)
         {
             switch (state)
             {

@@ -3,6 +3,7 @@
 
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using osu.Game.Beatmaps;
 using osu.Game.Rulesets.Objects;
 using osu.Game.Rulesets.Objects.Types;
@@ -20,7 +21,7 @@ namespace osu.Game.Rulesets.Pippidon.Beatmaps
 
         public override bool CanConvert() => Beatmap.HitObjects.All(h => h is IHasPosition);
 
-        protected override IEnumerable<PippidonHitObject> ConvertHitObject(HitObject original, IBeatmap beatmap)
+        protected override IEnumerable<PippidonHitObject> ConvertHitObject(HitObject original, IBeatmap beatmap, CancellationToken cancellationToken)
         {
             yield return new PippidonHitObject
             {
