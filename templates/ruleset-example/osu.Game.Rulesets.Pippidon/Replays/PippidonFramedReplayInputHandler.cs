@@ -35,15 +35,12 @@ namespace osu.Game.Rulesets.Pippidon.Replays
             }
         }
 
-        public override List<IInput> GetPendingInputs()
+        public override void CollectPendingInputs(List<IInput> inputs)
         {
-            return new List<IInput>
+            inputs.Add(new MousePositionAbsoluteInput
             {
-                new MousePositionAbsoluteInput
-                {
-                    Position = GamefieldToScreenSpace(Position)
-                }
-            };
+                Position = GamefieldToScreenSpace(Position)
+            });
         }
     }
 }

@@ -27,7 +27,7 @@ namespace osu.Game.Rulesets.EmptyScrolling.Objects.Drawables
                 ApplyResult(r => r.Type = HitResult.Perfect);
         }
 
-        protected override void UpdateStateTransforms(ArmedState state)
+        protected override void UpdateHitStateTransforms(ArmedState state)
         {
             const double duration = 1000;
 

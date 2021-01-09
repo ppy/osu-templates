@@ -18,15 +18,12 @@ namespace osu.Game.Rulesets.Pippidon.Replays
 
         protected override bool IsImportant(PippidonReplayFrame frame) => frame.Actions.Any();
 
-        public override List<IInput> GetPendingInputs()
+        public override void CollectPendingInputs(List<IInput> inputs)
         {
-            return new List<IInput>
+            inputs.Add(new ReplayState<PippidonAction>
             {
-                new ReplayState<PippidonAction>
-                {
-                    PressedActions = CurrentFrame?.Actions ?? new List<PippidonAction>(),
-                }
-            };
+                PressedActions = CurrentFrame?.Actions ?? new List<PippidonAction>(),
+            });
         }
     }
 }

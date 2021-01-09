@@ -9,9 +9,6 @@ namespace osu.Game.Rulesets.EmptyFreeform.Tests
     [TestFixture]
     public class TestSceneOsuPlayer : PlayerTestScene
     {
-        public TestSceneOsuPlayer()
-            : base(new EmptyFreeformRuleset())
-        {
-        }
+        protected override Ruleset CreatePlayerRuleset() => new EmptyFreeformRuleset();
     }
 }

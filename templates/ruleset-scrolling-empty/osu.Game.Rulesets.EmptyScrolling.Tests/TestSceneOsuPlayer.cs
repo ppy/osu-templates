@@ -9,9 +9,6 @@ namespace osu.Game.Rulesets.EmptyScrolling.Tests
     [TestFixture]
     public class TestSceneOsuPlayer : PlayerTestScene
     {
-        public TestSceneOsuPlayer()
-            : base(new EmptyScrollingRuleset())
-        {
-        }
+        protected override Ruleset CreatePlayerRuleset() => new EmptyScrollingRuleset();
     }
 }
