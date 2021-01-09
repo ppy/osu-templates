@@ -2,6 +2,7 @@
 // See the LICENCE file in the repository root for full licence text.
 
 using System.Collections.Generic;
+using System.Threading;
 using osu.Game.Beatmaps;
 using osu.Game.Rulesets.EmptyFreeform.Objects;
 using osu.Game.Rulesets.Objects;
@@ -21,7 +22,7 @@ namespace osu.Game.Rulesets.EmptyFreeform.Beatmaps
         // https://github.com/ppy/osu/tree/master/osu.Game/Rulesets/Objects/Types
         public override bool CanConvert() => true;
 
-        protected override IEnumerable<EmptyFreeformHitObject> ConvertHitObject(HitObject original, IBeatmap beatmap)
+        protected override IEnumerable<EmptyFreeformHitObject> ConvertHitObject(HitObject original, IBeatmap beatmap, CancellationToken cancellationToken)
         {
             yield return new EmptyFreeformHitObject
             {
