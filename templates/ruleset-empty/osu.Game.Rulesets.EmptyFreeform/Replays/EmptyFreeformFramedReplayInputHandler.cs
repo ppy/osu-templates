@@ -36,19 +36,16 @@ namespace osu.Game.Rulesets.EmptyFreeform.Replays
             }
         }
 
-        public override List<IInput> GetPendingInputs()
+        public override void CollectPendingInputs(List<IInput> inputs)
         {
-            return new List<IInput>
+            inputs.Add(new MousePositionAbsoluteInput
             {
-                new MousePositionAbsoluteInput
-                {
-                    Position = GamefieldToScreenSpace(Position),
-                },
-                new ReplayState<EmptyFreeformAction>
-                {
-                    PressedActions = CurrentFrame?.Actions ?? new List<EmptyFreeformAction>(),
-                }
-            };
+                Position = GamefieldToScreenSpace(Position),
+            });
+            inputs.Add(new ReplayState<EmptyFreeformAction>
+            {
+                PressedActions = CurrentFrame?.Actions ?? new List<EmptyFreeformAction>(),
+            });
         }
     }
 }
