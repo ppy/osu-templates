@@ -53,7 +53,7 @@ namespace osu.Game.Rulesets.Pippidon.Objects.Drawables
                 ApplyResult(r => r.Type = currentLane.Value == HitObject.Lane ? HitResult.Perfect : HitResult.Miss);
         }
 
-        protected override void UpdateStateTransforms(ArmedState state)
+        protected override void UpdateHitStateTransforms(ArmedState state)
         {
             switch (state)
             {
