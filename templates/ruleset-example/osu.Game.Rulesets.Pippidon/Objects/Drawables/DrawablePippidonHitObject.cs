@@ -42,13 +42,9 @@ namespace osu.Game.Rulesets.Pippidon.Objects.Drawables
             });
         }
 
-        protected override IEnumerable<HitSampleInfo> GetSamples() => new[]
+        public override IEnumerable<HitSampleInfo> GetSamples() => new[]
         {
-            new HitSampleInfo
-            {
-                Bank = SampleControlPoint.DEFAULT_BANK,
-                Name = HitSampleInfo.HIT_NORMAL,
-            }
+            new HitSampleInfo(HitSampleInfo.HIT_NORMAL, SampleControlPoint.DEFAULT_BANK)
         };
 
         protected override void CheckForResult(bool userTriggered, double timeOffset)
