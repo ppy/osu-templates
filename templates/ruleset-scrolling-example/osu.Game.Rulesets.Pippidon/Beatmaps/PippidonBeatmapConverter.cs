@@ -38,7 +38,7 @@ namespace osu.Game.Rulesets.Pippidon.Beatmaps
         }
 
         private int getLane(HitObject hitObject) => (int)MathHelper.Clamp(
-            (getUsablePosition(hitObject) - minPosition) / (maxPosition - minPosition) * PippidonPlayfield.LANE_COUNT, 0, PippidonPlayfield.LANE_COUNT);
+            (getUsablePosition(hitObject) - minPosition) / (maxPosition - minPosition) * PippidonPlayfield.LANE_COUNT, 0, PippidonPlayfield.LANE_COUNT - 1);
 
         private float getUsablePosition(HitObject h) => (h as IHasYPosition)?.Y ?? ((IHasXPosition)h).X;
     }

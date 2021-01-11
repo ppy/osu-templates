@@ -40,7 +40,7 @@ namespace osu.Game.Rulesets.Pippidon.Replays
 
                 double time = hitObject.StartTime - 5;
 
-                if (totalTravel == PippidonPlayfield.LANE_COUNT)
+                if (totalTravel == PippidonPlayfield.LANE_COUNT - 1)
                     addFrame(time, direction == PippidonAction.MoveDown ? PippidonAction.MoveUp : PippidonAction.MoveDown);
                 else
                 {
